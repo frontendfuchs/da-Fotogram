@@ -11,22 +11,20 @@
   </head>
   <body>
     <header>
-      <section class="header">
-        <div class="content">
-          <div class="header-logo">
-            <img
-              src="./assets/icons/fotogram-logo.png"
-              alt="fotogram logo"
-              id="fotogram-logo"
-            />
-            <img
-              src="./assets/icons/fotogram-logo-name.png"
-              alt="fotogram icon name"
-              id="fotogram-logo-name"
-            />
-          </div>
+      <div class="content">
+        <div class="header-logo">
+          <img
+            src="./assets/icons/fotogram-logo.png"
+            alt="fotogram logo"
+            id="fotogram-logo"
+          />
+          <img
+            src="./assets/icons/fotogram-logo-name.png"
+            alt="fotogram icon name"
+            id="fotogram-logo-name"
+          />
         </div>
-      </section>
+      </div>
     </header>
     <main>
       <section class="main-content">
@@ -37,6 +35,23 @@
             </div>
 
             <div id="image-gallery"></div>
+
+            <dialog id="myDialog">
+              <div class="dialog-top">
+                <h2 id="dialogTitle">Bildtitel</h2>
+                <button class="close-btn" onclick="closeDialog()">×</button>
+              </div>
+
+              <div class="dialog-image-box">
+                <img id="dialogImage" src="" alt="Großes Bild" />
+              </div>
+
+              <div class="dialog-controls">
+                <button class="arrow-btn" onclick="prevImage()">←</button>
+                <p id="dialogCount">1/12</p>
+                <button class="arrow-btn" onclick="nextImage()">→</button>
+              </div>
+            </dialog>
           </div>
         </div>
       </section>

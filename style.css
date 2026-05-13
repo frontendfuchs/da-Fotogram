@@ -15,8 +15,9 @@
 
 .content {
   width: 100%;
+  max-width: 1420px;
+  margin: 0 auto;
   padding: 10px;
-  max-width: 1920px;
 }
 
 body {
@@ -95,6 +96,101 @@ header {
   }
 }
 
+/* DIALOG */
+
+/* DIALOG */
+
+#myDialog {
+  width: 350px;
+  max-width: 90%;
+  padding: 16px;
+  border-radius: 32px;
+  background-color: #09212a;
+  color: white;
+  margin: auto;
+
+  &::backdrop {
+    background: rgba(51, 51, 51, 0.5);
+  }
+}
+
+.dialog-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+
+  #dialogTitle {
+    font-family: "figtree";
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .close-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    transition:
+      background-color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+  .close-btn:hover {
+    background-color: #2a4653;
+    transform: scale(1.05);
+  }
+}
+
+.dialog-image-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+
+  #dialogImage {
+    width: 100%;
+    max-width: 360px;
+    height: 240px;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.dialog-controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+
+  .arrow-btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #a02a3023;
+    color: #d14c45;
+    font-size: 24px;
+    cursor: pointer;
+    transition:
+      background-color 0.2s ease,
+      transform 0.2s ease,
+      color 0.2s ease;
+  }
+
+  .arrow-btn:hover {
+    background-color: #9b36365d;
+    color: #ff6a61;
+    transform: scale(1.05);
+  }
+
+  #dialogCount {
+    font-size: 16px;
+    color: white;
+  }
+}
+
 /* FOOTER */
 
 footer {
@@ -122,5 +218,65 @@ footer {
     font-family: figtree;
     color: #99acb3;
     font-size: 14px;
+  }
+}
+
+/* MEDIA QUERIES */
+
+/* DESKTOP */
+@media (max-width: 1439px) {
+  #image-gallery {
+    max-width: 1200px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 990px) {
+  #image-gallery {
+    gap: 15px;
+    max-width: 900px;
+  }
+}
+
+@media (min-width: 768px) {
+  header {
+    .header-logo {
+      justify-content: flex-start;
+      padding-left: 100px;
+    }
+  }
+}
+@media (min-width: 1440px) {
+  .content {
+    max-width: 1400px;
+  }
+
+  header {
+    justify-content: flex-start;
+  }
+
+  .content-wrapper {
+    padding: 80px 0;
+    gap: 48px;
+
+    #image-gallery {
+      gap: 30px;
+    }
+
+    #image-gallery img {
+      width: 150px;
+      height: 150px;
+    }
+
+    #myDialog {
+      width: 680px;
+      max-width: 675px;
+      padding: 40px;
+    }
+
+    #dialogImage {
+      max-width: 560px;
+      height: 374px;
+    }
   }
 }
