@@ -9,18 +9,18 @@ const dialogCountRef = document.getElementById("dialogCount");
 // Array containing all image paths for the gallery
 // Each entry represents one image that will be rendered
 const imgGallery = [
-"../assets/images/image1.jpg",
-  "../assets/images/image10.png",
-  "../assets/images/image11.png",
-  "../assets/images/image12.png",
-  "../assets/images/image2.jpg",
-  "../assets/images/image3.png",
-  "../assets/images/image4.jpg",
-  "../assets/images/image5.jpg",
-  "../assets/images/image6.jpg",
-  "../assets/images/image7.jpg",
-  "../assets/images/image8.jpg",
-  "../assets/images/image9.jpg"
+"./assets/images/image1.jpg",
+"./assets/images/image10.png",
+  "./assets/images/image11.png",
+  "./assets/images/image12.png",
+  "./assets/images/image2.jpg",
+  "./assets/images/image3.png",
+  "./assets/images/image4.jpg",
+  "./assets/images/image5.jpg",
+  "./assets/images/image6.jpg",
+  "./assets/images/image7.jpg",
+  "./assets/images/image8.jpg",
+  "./assets/images/image9.jpg"
 
 ];
 
